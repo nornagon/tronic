@@ -1,0 +1,15 @@
+<script src='/channel/bcsocket.js'></script>
+<script>
+socket = new BCSocket('/channel');
+socket.onopen = function () {
+	socket.send({cmd:'update'})
+}
+socket.onmessage = function (message) {
+	console.log(message)
+	switch (message.cmd) {
+		case 'eval':
+			eval(msg.cmd.code)
+			break;
+	}
+}
+</script>

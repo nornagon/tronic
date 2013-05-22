@@ -1,0 +1,12 @@
+{
+  "name": "tronic",
+  "version": "0.0.0",
+  "description": "a thing",
+  "author": "Jeremy Apthorp <nornagon@nornagon.net>",
+  "dependencies": {
+    "coffee-script": "*",
+    "browserchannel": "*",
+    "connect": "*",
+    "sandbox": "*"
+  }
+}
